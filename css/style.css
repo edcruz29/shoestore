@@ -17,15 +17,21 @@ header.header{
     padding: 10px 20px;
     box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
 }
-ul>li{
+nav.desktop ul>li{
     display: inline-block;
     list-style: none;
     margin: 0 10px;
     
 }
-li>a{
+nav.desktop li>a{
     text-decoration: none;
     color: #777;
+    font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+}
+nav.mobile{
+    display: none;
 }
 .banner{
     background-image: url(../img/image\ 13.svg);
@@ -143,9 +149,15 @@ line-height: 19px;
 }
 footer li{
     display: block;
+    list-style: none;
+    margin: 0;
+
+    
+    
 }
 footer a{
     color: white;
+    text-decoration: none;
 }
 .categorias, .institucional{
    margin: 60px auto;
@@ -154,6 +166,12 @@ footer a{
 line-height: 27px;
 }
 @media(max-width:768px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
     .container{
         max-width: 768px;
     }
