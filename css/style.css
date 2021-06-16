@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+ul>li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+    
+}
+li>a{
+    text-decoration: none;
+    color: #777;
+}
+.banner{
+    background-image: url(../img/image\ 13.svg);
+    height:235px ;
+    margin-bottom: 70px;
+}
+section.estilos h2{
+font-style: normal;
+font-weight: 800;
+font-size: 60px;
+line-height: 82px;
+text-align: center;
+
+}
+.wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 82px 113px;
+    margin-bottom: 210px;
+}
+
+section.off{
+    background-color: #C2185B;
+    padding:30px;
+    margin-bottom: 150px;
+}
+section.off h2{
+    color: white;
+    text-align: center;
+    font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 60px;
+
+    
+}
+span{
+    text-transform: uppercase;
+}
+.cards{
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cards div{
+    background-color: white;
+
+}
+.cards div p{
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 22px;
+}
+p.preco{
+    margin-bottom: 20px;
+}
+
+sec3{
+    margin-bottom: 130px;
+}
+.wrapper-sec3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: auto;
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 130px;
+}
+
+.wrapper-sec3 h2{
+max-width: 500px;
+font-style: normal;
+font-weight: 600;
+font-size: 39px;
+line-height: 53px;
+margin-bottom: 10px;
+}
+input[type= button]{
+    background-color: #C2185B;
+    color: white;
+    width: 400px;
+    height: 100px;
+    font-style: normal;
+font-weight: 600;
+font-size: 39px;
+line-height: 53px;
+cursor: pointer;
+margin-bottom: 80px;
+
+}
+footer{
+    background-color: #C2185B;
+    color: white;
+    padding: 10px 30px;
+    
+}
+.footer-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.footer-logo{
+    max-width: 233px;
+    margin-left: 130px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-right: 200px;
+    font-size: 14px;
+line-height: 19px;
+}
+footer li{
+    display: block;
+}
+footer a{
+    color: white;
+}
+.categorias, .institucional{
+   margin: 60px auto;
+    text-align: justify;
+    font-size: 20px;
+line-height: 27px;
+}
+@media(max-width:768px){
+    .container{
+        max-width: 768px;
+    }
+    .wrapper{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
