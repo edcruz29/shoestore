@@ -269,13 +269,9 @@ input[type=submit]{
     padding: 5px 0;
     font-size: 20px;
     font-weight: bold;
-    border: none
-    ;
+    border: none;
 
 }
-
-
-
 /**Tratamento Responsivo**/
 /**Home**/
 @media(max-width:768px){
@@ -321,9 +317,6 @@ sec3{
 
     margin-bottom: 50px;
 }
-
-
-
 .footer-logo{
     max-width: 233px;
     margin-left: 130px;
@@ -343,8 +336,7 @@ footer p{
 footer li{
     display: none;
 }
-
-    /**trabalhe conosco**/
+/**trabalhe conosco**/
     .trabalhe{
         max-width: 768px;
     }
@@ -363,6 +355,109 @@ footer li{
     .flex-wrapper{
         display: block;
     }
-
- 
 }
+
+@media(max-width:375px){
+    .container{
+        width: 100%;
+
+    }
+    .fa{
+        font-size: 35px;
+    }
+      nav.desktop{
+          display: none;
+      }
+      nav.mobile{
+          display: block;
+      }
+      .container{
+          max-width: 320px;
+      }
+      .wrapper{
+          display: block;
+          padding: 0;
+          margin-bottom: 10px;
+       
+      }
+      img{
+          width: 100%;   
+          margin-bottom: 30px;
+      }
+
+  section.off{
+      margin-bottom: 0;
+  }
+  .cards{
+      display: block;
+  
+  }
+  .cards > div{
+      margin: 10px auto;
+  }
+  sec3{
+      margin-bottom: 50px;
+      max-width: 320px;
+      padding: 30px;
+  }
+  .wrapper-sec3{
+      display:block;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .wrapper-sec3 h2{
+      font-size: 20px;
+      max-width: 320px;
+      line-height: normal;
+      margin-top: 20px;
+  }
+input[type=button]{
+   margin-bottom: 0;
+    max-width: 320px;
+    width: 100%;
+    font-size: 20px;
+}
+.posicao img{
+margin-bottom: 10px;
+}
+footer{
+    background-image: url(../img/shoes-logo-white-3\ 1.svg);
+    background-repeat: no-repeat;
+    height: 100px;
+    margin: auto;
+    padding: 0;
+  background-position: center;
+}
+.footer-logo{
+    display: none;
+}
+  .footer-wrapper{
+      display: block;
+  }
+  footer p{
+      display: none;
+  }
+  footer li{
+      display: none;
+  }
+  /**trabalhe conosco**/
+      .trabalhe{
+          max-width: 768px;
+      }
+      .trabalhe>h2{
+          text-align: center;
+          margin-top: 20px;
+      }
+      .options{
+          display: flex;
+          flex-direction: column;
+      }
+      .contatos{
+          display: flex;
+          flex-direction: column;
+      }
+      .flex-wrapper{
+          display: block;
+      }
+  }
+
