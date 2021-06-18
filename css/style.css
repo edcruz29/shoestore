@@ -17,6 +17,42 @@ header.header{
     padding: 10px 20px;
     box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
 }
+nav.mobile{
+	display: none;
+
+}
+nav.mobile i{
+	position: relative;
+	top: -23px;
+	font-size: 40px;
+	color: #C2185B;
+	cursor: pointer;
+}
+nav.mobile ul{
+	z-index:2;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 89px;
+	list-style-type: none;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+}
+nav.mobile li{
+	padding: 20px 0;
+	text-align: center;
+	font-weight: lighter;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+
+}
+nav.mobile a{
+	text-decoration: none;
+	color: #C2185B;
+	display: block;
+    font-weight: bold;
+
+
+}
 nav.desktop ul>li{
     display: inline-block;
     list-style: none;
@@ -30,9 +66,7 @@ nav.desktop li>a{
 font-size: 24px;
 line-height: 33px;
 }
-nav.mobile{
-    display: none;
-}
+
 .banner{
     background-image: url(../img/image\ 13.svg);
     height:235px ;
@@ -105,7 +139,10 @@ sec3{
     padding: 0 80px;
     margin-bottom: 130px;
 }
-
+.posicao{
+    position: relative;
+    top: 5px;
+}
 .wrapper-sec3 h2{
 max-width: 500px;
 font-style: normal;
@@ -151,10 +188,7 @@ line-height: 19px;
 footer li{
     display: block;
     list-style: none;
-    margin: 0;
-
-    
-    
+    margin: 0;   
 }
 footer a{
     color: white;
@@ -166,7 +200,88 @@ footer a{
     font-size: 20px;
 line-height: 27px;
 }
+
+
+
+/**trabalhe conosco**/
+
+
+.trabalhe > h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #575757;
+}
+.flex-wrapper{
+    display:flex;
+
+}
+article{
+margin-inline: auto;
+padding: 50px;
+}
+form, article{
+    flex: 1;
+    margin-inline: auto;
+padding: 50px;
+}
+article p {
+    margin-bottom: 20px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+form input, select{
+    margin-bottom:15px;
+    padding: 5px 10px;
+    border: 1px solid #9b9b9b;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: #9b9b9b;
+}
+.options{
+    display: flex;
+
+    margin:15px 0
+}
+.contatos{
+        display: flex;
+        margin:15px 0
+}
+textarea{
+    resize: none;
+    height: 101px;
+    margin-bottom:22px;
+}
+input[type=file]{
+    border: none;
+}
+.curriculo{
+    margin:30px 0;
+}
+input[type=submit]{
+    background-color: #C2185B;
+    color: white;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: none
+    ;
+
+}
+
+
+
+/**Tratamento Responsivo**/
+/**Home**/
 @media(max-width:768px){
+  .fa{
+      font-size: 35px;
+  }
     nav.desktop{
         display: none;
     }
@@ -178,7 +293,76 @@ line-height: 27px;
     }
     .wrapper{
         display: block;
-        margin: auto;
-        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+     
     }
+    img{
+        width: 100%;   
+        margin-bottom: 30px;
+    }
+.off{
+    margin: 0;
+}
+.cards{
+    display: block;
+
+}
+.cards > div{
+    margin: 10px auto;
+}
+sec3{
+    margin-bottom: 50px;
+}
+.wrapper-sec3{
+    display:block;
+    margin: auto;
+    width: 100%;
+
+    margin-bottom: 50px;
+}
+
+
+
+.footer-logo{
+    max-width: 233px;
+    margin-left: 130px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-right: 200px;
+    font-size: 14px;
+line-height: 19px;
+
+}
+.footer-wrapper{
+    display: block;
+}
+footer p{
+    display: none;
+}
+footer li{
+    display: none;
+}
+
+    /**trabalhe conosco**/
+    .trabalhe{
+        max-width: 768px;
+    }
+    .trabalhe>h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+    }
+    .contatos{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-wrapper{
+        display: block;
+    }
+
+ 
 }
