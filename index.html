@@ -4,133 +4,179 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index_style.css" />
     <title>Shoe Store</title>
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <header class="header">
-        <div class="logo">
-          <img src="./img/shoes-logo-2 1.svg" alt="" />
-        </div>
+        <img src="./img/shoes-logo-2 1.svg" alt="shoes" class="header__img" />
         <nav class="desktop">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Todos os Produtos</a></li>
-            <li><a href="">Coleções</a></li>
-            <li><a href="">Outlet</a></li>
-            <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-          </ul>
-        </nav>
-        <nav class="mobile">
-          <i class="fa fa-bars"></i>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Todos os Produtos</a></li>
-            <li><a href="">Coleções</a></li>
-            <li><a href="">Outlet</a></li>
-            <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+          <ul class="desktop__lista">
+            <li class="desktop__lista__itens">
+              <a href="#" class="desktop__lista__itens_link"
+                >Todos os Produtos</a
+              >
+            </li>
+            <li class="desktop__lista__itens">
+              <a href="#" class="desktop__lista__itens_link">Coleções</a>
+            </li>
+            <li class="desktop__lista__itens">
+              <a href="#" class="desktop__lista__itens_link">Outlet</a>
+            </li>
+            <li class="desktop__lista__itens">
+              <a href="trabalhe.html" class="desktop__lista__itens_link">Trabalhe Conosco</a>
+            </li>
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="banner"></section>
-        <section class="estilos">
-          <h2>encontre seu estilo</h2>
-          <div class="wrapper">
-            <img src="./img/image 7.svg" alt="" />
-            <img src="./img/image 8.svg" alt="" />
+      <main class="main">
+        <div class="banner"></div>
+        <section class="estilo">
+          <h2 class="estilo__titulo">encontre seu estilo</h2>
+          <div class="fotos">
+            <img src="./img/image 7.svg" alt="" class="fotos__estilo1" />
+            <img src="./img/image 8.svg" alt="" class="fotos__estilo2" />
           </div>
         </section>
-        <section class="off">
-          <h2><span>30% Off</span></h2>
-          <div class="cards">
-            <div>
-              <img src="./img/image 4.svg" alt="" />
-              <p>Scarpin Salto Fino Básico</p>
-              <p>R$140,00</p>
-            </div>
-            <div>
-              <img src="./img/image 5.svg" alt="" />
-              <p>Scarpin Salto Fino Básico</p>
-              <p>R$140,00</p>
-            </div>
-            <div>
-              <img src="./img/image 6.svg" alt="" />
-              <p>Scarpin Salto Fino Básico</p>
-              <p>R$140,00</p>
-            </div>
-            <div>
-              <img src="./img/image 9.svg" alt="" />
-              <p>Sandália Salto Fino</p>
-              <p class="preco">R$159,00</p>
-            </div>
-          </div>
-        </section>
-        <section class="sec3">
-          <div class="wrapper-sec3">
-            <div>
-              <h2><span>Sandália Palmilha Matelassê tiras rolotê</span></h2>
-              <input type="button" value="ver detalhes" />
-              <div class="posicao">
-                <img src="./img/image 12.svg" alt="detalhe" />
+        <section class="desconto">
+          <div class="bg">
+            <h2 class="bg__titulo">30% OFF</h2>
+            <div class="cards">
+              <div class="cards__wrapper">
+                <img
+                  src="./img/image 4.svg"
+                  alt=""
+                  class="cards__wrapper__img"
+                />
+                <p class="cards__wrapper__nome">Scarpin Salto Fino Básico</p>
+                <p class="cards__wrapper__preco">R$140,00</p>
+              </div>
+              <div class="cards__wrapper">
+                <img
+                  src="./img/image 5.svg"
+                  alt=""
+                  class="cards__wrapper__img"
+                />
+                <p class="cards__wrapper__nome">Scarpin Salto Fino Básico</p>
+                <p class="cards__wrapper__preco">R$140,00</p>
+              </div>
+              <div class="cards__wrapper">
+                <img
+                  src="./img/image 6.svg"
+                  alt=""
+                  class="cards__wrapper__img"
+                />
+                <p class="cards__wrapper__nome">Scarpin Salto Fino Básico</p>
+                <p class="cards__wrapper__preco">R$140,00</p>
+              </div>
+              <div class="cards__wrapper">
+                <img
+                  src="./img/image 9.svg"
+                  alt=""
+                  class="cards__wrapper__img"
+                />
+                <p class="cards__wrapper__nome">Sandália Salto Fino</p>
+                <p class="cards__wrapper__preco">R$159,00</p>
               </div>
             </div>
-            <img src="./img/image 11.svg" alt="" />
+          </div>
+        </section>
+        <section class="detalhes">
+          <div class="detalhes__wrapper">
+            <h2 class="detalhes__wrapper__titulo">
+              Sandália Palmilha Matelassê Tiras Rolotê
+            </h2>
+            <button class="detalhes__wrapper_destaque">ver detalhes</button>
+            <img
+              src="./img/image 12.svg"
+              alt="imagem12"
+              class="detalhes__wrapper__img"
+            />
+          </div>
+          <div class="detalhes__wrapper2">
+            <img src="./img/image 11.svg" alt="imagem11" />
           </div>
         </section>
       </main>
-      <footer>
-        <div class="footer-wrapper">
-            <div class="footer-logo">
-            <img src="./img/shoes-logo-white-3 1.svg" alt="" />
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                necessitatibus at quidem dolor deserunt iusto illum quibusdam!
-            </p>
-            </div>
-            <div class="categorias">
-                <p><b>Categorias</b></p>
-                <ul>
-                    <li><a href="">sandálias</a></li>
-                    <li><a href="">botas</a></li>
-                    <li><a href="">tênis</a></li>
-                    <li><a href="">oxford</a></li>
-                    <li><a href="">coturnos</a></li>
-                </ul>
-            </div>
-            <div class="institucional">
-                <p><b>Institucional</b></p>
-                <ul>
-                    <li><a href="">sobre nós</a></li>
-                    <li><a href="">perguntas frequentes</a></li>
-                    <li><a href="">política de privacidade</a></li>
-                    <li><a href="">rastreamento de pedidos</a></li>
-                    <li><a href="">contato</a></li>
-                </ul>
-            </div>
+      <footer class="footer">
+        <div class="logo">
+          <img
+            src="./img/shoes-logo-white-3 1.svg"
+            alt="logo rodapé"
+            class="logo__img"
+          />
+          <p class="logo__descricao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
+        <ul class="categorias">
+          categorias
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">sandálias</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">botas</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">tênis</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">oxford</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">coturnos</a>
+          </li>
+        </ul>
+        <ul class="institucional">
+          institucional
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links">sobre nós</a>
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links"
+              >perguntas frequentes</a
+            >
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links"
+              >politica de privacidade</a
+            >
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links"
+              >rastreamento de pedidos</a
+            >
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links">trabalhe conosco</a>
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links">contato</a>
+          </li>
+        </ul>
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
-      $(function(){
-        $('nav.mobile i').click(function(){
-          var el = $(this).parent().find('ul');
-          if(el.is(':visible') == false){
+      $(function () {
+        $("nav.mobile i").click(function () {
+          var el = $(this).parent().find("ul");
+          if (el.is(":visible") == false) {
             el.fadeIn();
-          }else{
+          } else {
             el.fadeOut();
           }
-          
-        })
-      })
+        });
+      });
     </script>
   </body>
 </html>
