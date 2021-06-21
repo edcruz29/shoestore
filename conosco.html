@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/conosco.css" />
+    <title>Trabalhe Conosco</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <img src="./img/shoes-logo-2 1.svg" alt="shoes" class="header__img" />
+        <nav class="desktop">
+          <ul class="desktop__lista">
+            <li class="desktop__lista__itens">
+              <a href="#" class="desktop__lista__itens_link"
+                >Todos os Produtos</a
+              >
+            </li>
+            <li class="desktop__lista__itens">
+              <a href="#" class="desktop__lista__itens_link">Coleções</a>
+            </li>
+            <li class="desktop__lista__itens">
+              <a href="#" class="desktop__lista__itens_link">Outlet</a>
+            </li>
+            <li class="desktop__lista__itens">
+              <a href="trabalhe.html" class="desktop__lista__itens_link"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="trabalhe">
+        <form action="" class="formulario">
+          <h2 class="titulo">Faça parte do nosso time</h2>
+          <label for="nome" class="formulario__label">Nome</label>
+          <input type="nome" id="nome" name="nome" class="formulario__input" />
+          <label for="email" class="formulario__label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="formulario__input"
+          />
+          <label for="tel" class="formulario__label">Telefone</label>
+          <input type="tel" name="tel" id="tel" class="formulario__input" />
+          <label for="" class="formulario__label">Departamentos</label>
+          <select
+            name="departamentos"
+            id="departamentos"
+            class="formulario__select"
+          >
+            <option value="" selected disabled></option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="compras">Compras</option>
+            <option value="rh">Recursos Humanos</option>
+          </select>
+          <label for="" class="formulario__label">Disponibilidade</label>
+            <div class="formulario__options">
+                    <div class="formulario__options__wrappers">
+                    <input
+                        type="checkbox"
+                        name="disponibilidade"
+                        id="option-Integral"
+                    /><label for="" class="formulario__label">Integral (8h)</label>
+                </div>
+                <div class="formulario__options__wrappers">
+                    <input
+                        type="checkbox"
+                        name="disponibilidade"
+                        id="option-meio"
+                    /><label for="" class="formulario__label"
+                        >Meio período (4h)</label
+                    >
+                </div>
+                <div class="formulario__options__wrappers">
+                    <input
+                        type="checkbox"
+                        name="disponibilidade"
+                        id="option-freelance"
+                    /><label for="" class="formulario__label">Freelance</label>
+                </div>
+          </div>
+
+          <label for="" class="formulario__label"
+            >Qual a melhor forma de entrarmos em contato com você?</label
+          >
+          <div class="formulario__options">
+                <div class="formulario__options__wrappers">
+                    <input type="radio" name="contato" id="option-email" /><label for=""class="formulario__label">Email</label>
+                </div>
+                <div class="formulario__options__wrappers">
+                     <input type="radio" name="contato" id="option-ligacao" /><label for=""class="formulario__label">Ligação</label>
+                </div>
+                <div class="formulario__options__wrappers">
+                    <input type="radio" name="contato" id="WhatsApp" /><label for=""class="formulario__label">WhatsApp</label>
+                </div>
+          </div>
+          <label for="comentario" class="formulario__label">Mensagem</label>
+          <textarea name="comentario" id="comentario" cols="30" rows="10" class="formulario__textarea"></textarea>
+          <label for="curriculo" class="formulario__label">Curriculo  <input type="file" name="curriculo" id="curriculo" class="formulario__file"></label>
+         
+          <input type="button" value="enviar" type="submit" class="formulario__button">
+        </form>
+        <article class="artigo">
+          <p class="artigo__paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="artigo__paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="artigo__paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <div class="logo">
+          <img
+            src="./img/shoes-logo-white-3 1.svg"
+            alt="logo rodapé"
+            class="logo__img"
+          />
+          <p class="logo__descricao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <ul class="categorias">
+          categorias
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">sandálias</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">botas</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">tênis</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">oxford</a>
+          </li>
+          <li class="categorias__itens">
+            <a href="#" class="categorias__itens__links">coturnos</a>
+          </li>
+        </ul>
+        <ul class="institucional">
+          institucional
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links">sobre nós</a>
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links"
+              >perguntas frequentes</a
+            >
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links"
+              >politica de privacidade</a
+            >
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links"
+              >rastreamento de pedidos</a
+            >
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links">trabalhe conosco</a>
+          </li>
+          <li class="institucional__itens">
+            <a href="#" class="institucional__itens__links">contato</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
