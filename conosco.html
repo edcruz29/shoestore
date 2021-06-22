@@ -13,30 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/padrao.css">
     <link rel="stylesheet" href="./css/conosco.css" />
     <title>Trabalhe Conosco</title>
   </head>
   <body class="body">
-    <div class="container">
+    <div class="body__container">
       <header class="header">
         <img src="./img/shoes-logo-2 1.svg" alt="shoes" class="header__img" />
-        <nav class="desktop">
-          <ul class="desktop__lista">
-            <li class="desktop__lista__itens">
-              <a href="#" class="desktop__lista__itens_link"
+        <nav class="nav">
+          <ul class="nav__lista">
+            <li class="nav__lista__itens">
+              <a href="#" class="nav__lista__itens_link"
                 >Todos os Produtos</a
               >
             </li>
-            <li class="desktop__lista__itens">
-              <a href="#" class="desktop__lista__itens_link">Coleções</a>
+            <li class="nav__lista__itens">
+              <a href="#" class="nav__lista__itens_link">Coleções</a>
             </li>
-            <li class="desktop__lista__itens">
-              <a href="#" class="desktop__lista__itens_link">Outlet</a>
+            <li class="nav__lista__itens">
+              <a href="#" class="nav__lista__itens_link">Outlet</a>
             </li>
-            <li class="desktop__lista__itens">
-              <a href="trabalhe.html" class="desktop__lista__itens_link"
-                >Trabalhe Conosco</a
-              >
+            <li class="nav__lista__itens">
+              <a href="conosco.html" class="nav__lista__itens_link">Trabalhe Conosco</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +54,7 @@
           />
           <label for="tel" class="formulario__label">Telefone</label>
           <input type="tel" name="tel" id="tel" class="formulario__input" />
-          <label for="" class="formulario__label">Departamentos</label>
+          <label for="departamentos" class="formulario__label">Departamentos</label>
           <select
             name="departamentos"
             id="departamentos"
@@ -66,14 +65,14 @@
             <option value="compras">Compras</option>
             <option value="rh">Recursos Humanos</option>
           </select>
-          <label for="" class="formulario__label">Disponibilidade</label>
+          <label for="disponibilidade" class="formulario__label">Disponibilidade</label>
             <div class="formulario__options">
                     <div class="formulario__options__wrappers">
                     <input
                         type="checkbox"
                         name="disponibilidade"
                         id="option-Integral"
-                    /><label for="" class="formulario__label">Integral (8h)</label>
+                    /><label for="disponibilidade" class="formulario__label">Integral (8h)</label>
                 </div>
                 <div class="formulario__options__wrappers">
                     <input
@@ -109,7 +108,7 @@
           </div>
           <label for="comentario" class="formulario__label">Mensagem</label>
           <textarea name="comentario" id="comentario" cols="30" rows="10" class="formulario__textarea"></textarea>
-          <label for="curriculo" class="formulario__label">Curriculo  <input type="file" name="curriculo" id="curriculo" class="formulario__file"></label>
+          <label for="curriculo" class="formulario__label">Currículo  <input type="file" name="curriculo" id="curriculo" class="formulario__file"></label>
          
           <input type="button" value="enviar" type="submit" class="formulario__button">
         </form>
